@@ -44,4 +44,4 @@ git clone https://github.com/aaagithub114/rags-drum-essay.git \
 
 ## 许可证
 
-[MIT](./LICENSE) © 2026 aaagithub114（仅限本仓库的原创分析部分）。
+[MIT](./LICENSE) © 2026 aaagithub114（仅限本仓库的原创分析部分；第三方引文与语料的权利声明见 [NOTICE](./NOTICE)）。
