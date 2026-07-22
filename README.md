@@ -1,6 +1,6 @@
 # rags-drum-essay
 
-一个 **Claude / Claude Code 技能（skill）**：为「屋顶现视研·拾荒战略 Rags Drum」年度 ACG 征文——含 2026 年复活的**「拾荒战略 Repeat Vol.1・重思日常」**——构思、写作或修改参赛文章时，载入一份从 **23 篇历届获奖作品**蒸馏出的评审偏好画像：统计事实、一手赛制规则（2020–2022 三届完整公告 + Repeat Vol.1 新规）、分级置信度的偏好推论，以及选题/结构/文体对齐清单与终稿自查。
+一个兼容支持 `SKILL.md` 技能目录的 AI 代理的 skill：为「屋顶现视研·拾荒战略 Rags Drum」年度 ACG 征文——含 2026 年复活的**「拾荒战略 Repeat Vol.1・重思日常」**——构思、写作或修改参赛文章时，按需读取从 **23 篇历届获奖作品**蒸馏出的评审偏好画像、统计事实、一手赛制规则、分级置信度的偏好推论，以及选题/结构/文体对齐清单与终稿自查。
 
 > 它不是模板，而是**先验分布**。机械套用获奖模板本身可能被该社群识别为套路（社群奖励过对"套理论"风气的自我批判）。正确用法是拿它去**校准判断**，而非填空。
 
@@ -12,22 +12,23 @@ references/
   contest-facts.md                三届赛制规则与逐届演变、2026 Repeat Vol.1 新规、评委、层级对照表、负样本、社群口味线索
   announcements.md                四届官方结果名单 + 完整受赏名单 + 来源链接（一手事实层，原文未复制）
   corpus-stats.md                 全部定量统计与每篇速览表
+  alignment-guide.md              按需读取的偏好推论、写作对齐方法与终稿清单
   work-profiles.md                23 篇逐篇写作档案（结构/理论/文体/少量评论性摘录）
 ```
 
 ## 如何使用
 
-这是标准的 Claude Code skill 目录，把本仓库内容放到技能目录下即可：
+这是标准的 `SKILL.md` 技能目录。将本仓库放到目标代理支持的技能目录下即可：
 
-- 项目级：`<你的项目>/.claude/skills/rags-drum-essay/`
-- 用户级：`~/.claude/skills/rags-drum-essay/`（Windows：`%USERPROFILE%\.claude\skills\rags-drum-essay\`）
+- 项目级：`<你的项目>/<技能目录>/rags-drum-essay/`
+- 用户级：`<用户技能目录>/rags-drum-essay/`
 
 ```bash
 git clone https://github.com/aaagithub114/rags-drum-essay.git \
-  ~/.claude/skills/rags-drum-essay
+  path/to/skills/rags-drum-essay
 ```
 
-之后在谈到"拾荒战略投稿 / ACG 批评参赛写作 / 对标获奖作品"时，技能会被触发；也可显式调用 `/rags-drum-essay`。技能内容是纯指令与资料，与具体模型无关。
+之后在谈到"拾荒战略投稿 / ACG 批评参赛写作 / 对标获奖作品"时，支持技能发现的代理可触发本 skill；也可在请求中明确要求使用 `rags-drum-essay`。技能内容是纯指令与资料，与具体模型无关。
 
 ## 认识论前提（重要）
 
