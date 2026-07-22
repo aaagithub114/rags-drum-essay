@@ -10,7 +10,7 @@
 SKILL.md                          技能主文件（含 frontmatter：name / description）
 references/
   contest-facts.md                三届赛制规则与逐届演变、2026 Repeat Vol.1 新规、评委、层级对照表、负样本、社群口味线索
-  announcement-2021.md            2021 评选公告要点摘要 + 来源链接（原文未复制）
+  announcements.md                四届官方结果名单 + 完整受赏名单 + 来源链接（一手事实层，原文未复制）
   corpus-stats.md                 全部定量统计与每篇速览表
   work-profiles.md                23 篇逐篇写作档案（结构/理论/文体/少量评论性摘录）
 ```
